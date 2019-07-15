@@ -1,27 +1,28 @@
 package com.stackroute.domain;
 
-
 public class Actor {
 
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
+   private String name;
 
-    public void setName(String name) {
+    public Actor(String name, String gender, int age) {
         this.name = name;
-    }
-
-    public void setAge(int age) {
+        this.gender = gender;
         this.age = age;
     }
 
     private String gender;
-    private String name;
     private int age;
 
-    public void actorInfo()
-    {
-        System.out.println(name.toUpperCase()+" is a " + gender+ " Actor of age " +age+".");
+
+    public String getName() {
+        return name;
     }
 
+    public String getGender() {
+        return gender;
+    }
+
+    public int getAge() {
+        return age;
+    }
 }
