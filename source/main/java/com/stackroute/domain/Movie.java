@@ -2,17 +2,19 @@ package com.stackroute.domain;
 
 public class Movie {
 
-    //Movie dependency
-    Actor actor;
+   private Actor actor;
 
-    //Setter for actor bean.
-    public void setActor(Actor actor) {
+    public Movie(Actor actor) {
         this.actor = actor;
     }
 
-    //To read actor information
-    public void readInfo()
-    {
-        actor.actorInfo();
+    public Actor getActor() {
+        return actor;
+    }
+
+    public void display(){
+
+
+        System.out.println("Actor name: "+actor.getName()+"\nAge : "+actor.getAge()+"\nGender: "+actor.getGender());
     }
 }
