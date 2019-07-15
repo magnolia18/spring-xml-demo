@@ -7,6 +7,25 @@ public class Actor {
     public Actor(String name, String gender, int age) {
         this.name = name;
         this.gender = gender;
+    }
+
+    @Override
+    public String toString() {
+        return "Actor{" +
+                "name='" + name + '\'' +
+                ", gender='" + gender + '\'' +
+                '}';
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public void setAge(int age) {
         this.age = age;
     }
 
